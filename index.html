@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+
+        body
+
+        {
+            padding: 20px;
+            
+        }
+
+        .box
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:  rgb(168, 190, 165);
+            border: 1px solid rgb(250, 239, 239);
+            box-shadow: 3px rgb(102, 97, 97);
+            gap: 50px;
+            padding: 10px;
+            border-radius: 15px;
+            
+        }
+
+
+        nav
+        {
+            
+            display: flex;
+            justify-content: space-evenly ;
+            align-items: start;
+            padding: 15px 30px;
+            border: 2px solid rgb(221, 216, 216);
+            box-shadow: 3px rgb(102, 97, 97);
+            background-color: rgb(240, 237, 225);
+            border-radius: 10px;
+            width: 100%;
+            max-width: 1200px;
+            
+
+        }
+
+        a
+        {
+            text-decoration: none;
+            color: black;
+            padding: 30px;
+            
+        }
+
+        #menu
+        {
+            display: flex;
+            gap: 20px;
+        }
+
+
+
+        .intro-section
+        {
+            display: flex;
+            justify-content: space-evenly;
+            height: auto;
+            width: auto;
+            border: 2px solid rgb(221, 216, 216);
+            box-shadow: 3px rgb(102, 97, 97);
+            background-color: rgb(243, 237, 225);
+            border-radius: 15px;
+            align-items: center;
+        
+         }
+
+        img
+        {
+            height: 570px;
+            width: 700px;
+            padding: 30px;
+        }
+
+        #title
+        {
+            font-size: xx-large;
+            font-weight: bolder;
+            word-spacing: 5px;
+            padding: 20px;
+            margin-bottom:5px;
+        }
+
+        #content
+        {
+            font-size: medium;
+            font-weight: 600;
+            word-spacing: 5px;
+            line-height: 25px;
+            padding: 30px;
+            margin-top: 10px;
+        }
+
+        .heading
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: none;
+        }
+
+        .row-one
+        {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .row-two
+        {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+
+       #card
+       {
+        width: 350px;
+        height: auto;
+        border: 5px;
+        border: 2px solid rgb(221, 216, 216);
+        box-shadow: 3px rgb(102, 97, 97);
+        background-color: rgb(243, 237, 225);
+        border-radius: 15px;
+        align-items: center;
+       }
+
+        #card>img
+        {
+            width: 300px;
+            height: 250px;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: none;
+        }
+
+        .card-content>p
+        {
+
+            font-size: medium;
+            font-weight: 600;
+            padding: 20px;
+            line-height: 20px;
+            align-items: center;
+            margin-top: none;
+
+       }
+
+        .footer
+        {
+
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgb(243, 237, 230) ;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+
+        #form 
+        {
+            border-radius: 10px;
+            padding: 25px;
+            width: 400px;
+            margin-top: 50px;
+        }
+
+        .row input
+        {
+            flex: 1;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            gap: 5px;
+            background-color: rgb(176, 197, 183); 
+            color: black;
+            border: none;
+        }
+
+        .row
+        { 
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        #rightside
+        {
+            line-height: 20px;
+            font-weight: 500;
+            font-size: medium;
+            padding: 20px;
+        }
+
+        .btn
+        {
+            background-color: rgb(88, 121, 99); 
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover 
+        {
+            background-color: rgb(8, 51, 30); 
+        }
+         
+         
+        @media (max-width: 768px)
+        {
+  
+        nav
+        {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        #menu
+        {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+         }
+
+        a
+        {
+            padding: 10px;
+        }
+
+        .intro-section 
+        {
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .intro-section img 
+        {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+        }
+
+        #left-section 
+        {
+            padding: 20px;
+        } 
+
+        .row-one,
+        .row-two 
+        {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        #card 
+        {
+            width: 90%;
+        }
+
+        #card > img 
+        {
+            width: 100%;
+            height: auto;
+        }
+
+        .footer 
+        {
+            flex-direction: column;
+            gap: 30px;
+            padding: 20px;
+            ext-align: center;
+        }
+
+        #form 
+        {
+            width: 90%;
+            margin: auto;
+        }
+
+        .row 
+        {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .btn 
+        {
+            width: 100%;
+        }  
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div class="header">
+        <nav>
+            <h1 class="text-xl font-bold">EuroTravel</h1>
+            <div id="menu">
+                <a href="#HOME">HOME</a>
+                <a href="#ABOUT">ABOUT</a>
+                <a href="#CONTACT US">CONTACT US</a>
+                <a href="#OUR TEAM"> OUR TEAM</a>
+            </div>
+        </nav>
+
+    </div>
+
+    <div id="body">
+        <div class="intro-section">
+            <div id="right-section">
+                <img src="./images/map.jpeg" alt="map-image">
+            </div>
+
+            <div id="left-section">
+                <p>
+                <p id="title">Your Story, Waiting to Happen</p>
+                <p id="content">
+                    "To travel is to breathe in new stories, to feel alive in unfamiliar streets,
+                    and to find pieces of yourself scattered across places you've never been.
+                    Europe awaits with its timeless charm, cobbled paths, and soul-stirring views.
+                    So what’s holding you back? Let’s chase sunsets, collect memories, and write your
+                    next chapter. <br> <br>
+
+                    They say the best stories don’t come from comfort zones, but from cobblestone streets,
+                    unexpected laughter, and sunsets in unfamiliar cities. There’s something deeply human about 
+                    leaving behind the known and walking into the heart of a place that speaks a different language but
+                    somehow understands you. Travel isn't just about places, it's about feelings, freedom, and finding
+                    yourself in moments you never planned. So what’s the wait for? Let’s make memories that feel like poetry
+                    with @EuroTravel."
+                    </p>
+            </p>
+            </div>
+        </div>
+
+        <div class="main-content">
+
+            <div class="heading">
+
+                <h2 style="color: rgb(20, 77, 42);">DESTINATIONS</h2>
+                <p>@eurotravel</p>
+
+            </div>
+
+            <div class="row-one">
+
+                <div id="card">
+                    <img src="./images/download (9).jpeg" alt="paris-image">
+                    <div class="card-content">
+                        <p>“A city where every corner whispers love, and every sunset paints the Eiffel in gold.”</p>
+                    </div>
+                </div>
+
+
+                <div id="card">
+                    <img src="./images/Colosseum.jpeg" alt="rome-image">
+                    <div class="card-content">
+                        <p>“A timeless city where ancient ruins meet lively piazzas every step tells a story.”</p>
+                    </div>
+                </div>
+
+                <div id="card">
+                    <img src="./images/'Barcelona Cityscape' Poster, picture, metal print, paint by Mason Scott _ Displate.jpeg" alt="barcelona-image">
+                    <div class="card-content">
+                        <p>“A vibrant blend of art, beach, and culture where every corner bursts with life.”</p>
+                    </div>
+                </div>
+
+                 
+            </div> <br><br>
+
+
+            <div class="row-two">
+
+                <div id="card">
+                    <img src="./images/Amsterdam, Netherlands .jpeg" alt="Amsterdam-image">
+                    <div class="card-content">
+                        <p>“Glide through canals, wander quaint alleys, and find charm in every corner of this cycling city.”</p>
+                    </div>
+                </div>
+
+                <div id="card">
+                    <img src="./images/prague.jpeg" alt="Prague-image">
+                    <div class="card-content">
+                        <p>“A fairytale city of spires, cobblestones, and timeless charm — where history meets romance at every turn.”</p>
+                    </div>
+                </div>
+
+                <div id="card">
+                    <img src="./images/Vienna, Austria.jpeg" alt="venice-image">
+                    <div class="card-content">
+                        <p>“A floating dream woven through canals and timeless romance.”</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="footer" id="">
+        <div id="rightside">
+            <p>
+                <p style="font-weight:600;font-size:x-large">CONTACT US</p>
+                <p>
+                    Planning your next European adventure? We’d love to hear from you.
+                    Whether you have questions, suggestions, or stories to share, our
+                    team is here to assist you every step of the way. Let’s make your 
+                    travel experience smooth, inspiring, and unforgettable.
+                </p>
+                <p><strong>📍 Location:</strong> Pune, Maharashtra, India</p>
+                <p><strong>📧 Email:</strong><a href="@eurowander.com">contact@eurowander.com</a></p>
+                <p><strong>📞 Phone:</strong> +91 98765 43210</p>
+            </p>
+        </div>
+
+        <div id="form">
+            <div class="row">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Email"> 
+            </div> <br>
+
+            <div class="row">
+                <input type="Number" placeholder="Ph.Number">
+                <input type="text" placeholder="Enter your destinations">
+            </div> <br>
+
+            <div class="row">
+                <input type="date" placeholder="Enter start date">
+                <input type="date" placeholder="Enter end date">
+            </div>
+
+             <button class="btn">Plan My Trip</button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
