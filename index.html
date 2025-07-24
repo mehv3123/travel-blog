@@ -218,97 +218,131 @@
         {
             background-color: rgb(8, 51, 30); 
         }
-         
-         
-       @media (max-width: 768px)
- {
+        @media (max-width: 768px) {
 
+  .box {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  /* NAVBAR */
   nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    padding: 10px 20px;
+    padding: 15px 20px;
     box-sizing: border-box;
+    background-color: #f9f5e9;
+    border-radius: 10px;
   }
 
   #menu {
     display: flex;
     flex-direction: row;
-    gap: 15px;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
   }
-  .main-content,
-  .intro {
+
+  .intro-section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .intro-text {
-    width: 48%;
-  }
-
-  .intro-image {
-    width: auto;
-  }
-
-  .box {
-    width: 100%;
-    margin: auto;
-    box-sizing: border-box;
-  }   
-
-
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
     padding: 20px;
     box-sizing: border-box;
   }
 
-  .card {
-    width: 45%;
-    box-sizing: border-box;
-     display: flex;
-      justify-content:space-evenly;
-      justify-
+  .intro-section img {
+    width: 48%;
+    height: auto;
   }
 
+  #left-section {
+    width: 48%;
+    padding: 0;
+  }
+  .row-one,
+  .row-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+  }
 
-  input[type="text"],
-  input[type="date"],
-  input[type="email"],
-  textarea {
+  #card {
+    width: 30%;
+    min-width: 180px;
+    box-sizing: border-box;
+  }
+
+  #card img {
     width: 100%;
-    display: block;
-    padding: 8px;
-    font-size: 14px;
+    height: auto;
+    object-fit: cover;
+  }
+
+
+  #form {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
     box-sizing: border-box;
   }
 
-  input::placeholder,
-  textarea::placeholder {
-    font-size: 14px;
-    color: #666;
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
   }
+
+  .row input,
+  .row select,
+  .row textarea {
+    flex: 1;
+    min-width: 48%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+ 
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  /* GENERAL */
   body {
     overflow-x: hidden;
   }
-
-
 }
-    </style>
+
+         
+</style>
 </head>
 <body>
     <div class="box">
