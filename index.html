@@ -264,9 +264,12 @@
     #card {
         width: 90%;
         max-width: 400px;
-        margin: auto;
         box-sizing: border-box;
         overflow: hidden;
+        margin: auto;
+       display: flex;
+       flex-direction: column;
+        align-items: center;
     }
 
     #card > img {
@@ -277,11 +280,12 @@
     }
 
     .footer {
-        flex-direction: column;
-        gap: 30px;
-        padding: 20px;
-        text-align: center;
-        align-items: center;
+       display: flex;
+      flex-direction: column;
+      align-items: center;
+       justify-content: center;
+      text-align: center;
+      width: 100%;
     }
 
     #form {
