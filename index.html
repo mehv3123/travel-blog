@@ -221,26 +221,24 @@
 @media (max-width: 768px) {
     body {
         padding: 10px;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     nav {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding: 10px;
     }
 
     nav a {
-        font-size: 14px;
-        margin: 5px 10px;
+        font-size: 12px;
+        padding: 4px 8px;
     }
 
     .box {
+        width: 90%;
         padding: 10px;
-        width: 95%;
         margin: 0 auto;
     }
 
@@ -248,33 +246,33 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 10px;
     }
 
     .intro img {
-        width: 80%;
+        width: 150px;
         height: auto;
-        margin-bottom: 15px;
     }
 
     .intro-text h1 {
-        font-size: 20px;
-        margin-bottom: 10px;
+        font-size: 18px;
+        margin-bottom: 8px;
     }
 
     .intro-text p {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .cards-container {
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 10px;
         justify-content: center;
     }
 
     .card {
-        width: 45%;
-        min-width: 140px;
+        width: 130px;
+        padding: 10px;
     }
 
     .card img {
@@ -282,18 +280,24 @@
         height: auto;
     }
 
-    input[type="date"] {
-        font-size: 14px;
+    input[type="date"],
+    input[type="text"],
+    textarea,
+    button {
+        font-size: 12px;
         padding: 6px;
         width: 100%;
     }
 
-    input::placeholder {
-        font-size: 14px;
-    }
-
     form {
         width: 100%;
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
+        text-align: center;
     }
 }
 
