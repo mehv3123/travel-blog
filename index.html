@@ -221,127 +221,83 @@
          
          
        @media (max-width: 768px)
-        {
-    
+ {
 
-    nav {
-        display: flex;
+  nav {
+    display: flex;
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 10px 15px;
-    width: 100%;         
-    max-width: 100%;   
+    width: 100%;
+    padding: 10px 20px;
     box-sizing: border-box;
-    }
+  }
 
-    #menu {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  #menu {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-content,
+  .intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+  }
 
-    a {
-        padding: 10px;
-    }
+  .intro-text {
+    width: 48%;
+  }
+
+  .intro-image {
+    width: 48%;
+  }
 
 
-    .intro-section {
-        flex-direction: column;
-        padding: 20px;
-    }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
 
-    .intro-section img {
-        width: 100%;
-        height: auto;
-        padding: 10px;
-    }
+  .card {
+    width: 45%;
+    box-sizing: border-box;
+  }
 
-    #left-section {
-        padding: 10px 20px;
-        text-align: center;
-    }
+  /* FORM ELEMENTS */
+  input[type="text"],
+  input[type="date"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
 
-    #title {
-        font-size: x-large;
-    }
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 14px;
+    color: #666;
+  }
+  body {
+    overflow-x: hidden;
+  }
 
-    
-    .row-one,
-    .row-two {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
 
-    #card {
-        width: 90%;
-        margin: 10px auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #card > img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        padding: 0;
-        border-radius: 10px;
-    }
-
- 
-    .footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        padding: 20px;
-        text-align: center;
-    }
-
-    #form {
-        width: 90%;
-        margin: auto;
-        padding: 20px;
-    }
-
-    .row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 10px;
-    }
-
-    .row input {
-        width: 100%;
-        padding: 10px;
-        font-size: 1rem;
-        background-color: rgb(176, 197, 183);
-        border-radius: 5px;
-        border: none;
-        color: black;
-    }
-
-    input[type="date"] {
-        width: 100%;
-        padding: 10px;
-        font-size: 1rem;
-        background-color: rgb(176, 197, 183);
-        border-radius: 5px;
-        border: none;
-        color: black;
-    }
-
-    .btn {
-        width: 100%;
-        margin-top: 15px;
-    }
 }
 
     
