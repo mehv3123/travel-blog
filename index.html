@@ -218,128 +218,91 @@
         {
             background-color: rgb(8, 51, 30); 
         }
-        @media (max-width: 768px) {
+   @media only screen and (max-width: 768px) {
+
+  body {
+    padding: 10px;
+  }
+
+  .nav {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .nav a {
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  .intro {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .intro h1 {
+    font-size: 22px;
+  }
 
   .box {
-    width: 95%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
-  /* NAVBAR */
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 15px 20px;
-    box-sizing: border-box;
-    background-color: #f9f5e9;
-    border-radius: 10px;
-  }
-
-  #menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    flex-wrap: wrap;
-  }
-
-  .intro-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    width: 90%;
+    padding: 15px;
+    margin: 0 auto;
     gap: 20px;
-    flex-wrap: wrap;
-    padding: 20px;
-    box-sizing: border-box;
   }
 
-  .intro-section img {
-    width: 48%;
-    height: auto;
-  }
-
-  #left-section {
-    width: 48%;
-    padding: 0;
-  }
-  .row-one,
-  .row-two {
+  .cards {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 15px;
-    padding: 20px;
   }
 
-  #card {
-    width: 30%;
-    min-width: 180px;
-    box-sizing: border-box;
-  }
-
-  #card img {
-    width: 100%;
+  .card {
+    width: 45%;
+    min-width: 150px;
     height: auto;
-    object-fit: cover;
-  }
-
-
-  #form {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
     box-sizing: border-box;
   }
 
-  .row {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    flex-wrap: wrap;
+  .card img {
     width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
   }
 
-  .row input,
-  .row select,
-  .row textarea {
-    flex: 1;
-    min-width: 48%;
+  .form {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="tel"] {
+    width: 90%;
     padding: 10px;
     font-size: 14px;
   }
 
-  .btn {
-    width: 100%;
-    padding: 12px;
+  input::placeholder {
+    color: #888;
+  }
+
+  button {
+    width: 150px;
     font-size: 16px;
   }
-
- 
-  .footer {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  /* GENERAL */
-  body {
-    overflow-x: hidden;
-  }
 }
+
 
          
 </style>
